@@ -1,15 +1,15 @@
-# Aistudio 聊天记录转 Markdown 工具
+# AI Studio 聊天记录转 Markdown 工具
 
-一个简单易用的工具，用于将 Google Aistudio 聊天记录转换为清晰易读的 Markdown 文档。
+一个简单易用的工具，用于将 Google AI Studio 聊天记录转换为清晰易读的 Markdown 文档。
 
 ## 📋 项目概述
 
-该工具可以帮助您将 Google Aistudio 导出的聊天记录 JSON 文件转换为结构清晰、格式美观的 Markdown 文档，方便阅读、分享和归档。
+该工具可以帮助您将 Google AI Studio 导出的聊天记录 JSON 文件转换为结构清晰、格式美观的 Markdown 文档，方便阅读、分享和归档。
 
 ## ✨ 功能特性
 
 ### 🎯 核心功能
-- **批量转换**：支持同时转换多个 Aistudio 聊天记录文件
+- **批量转换**：支持同时转换多个 AI Studio 聊天记录文件
 - **自动识别**：智能识别聊天记录中的用户和 AI 消息
 - **格式优化**：生成结构清晰、美观易读的 Markdown 文档
 - **完整保留**：保留聊天记录中的所有内容，包括 AI 思考过程
@@ -23,17 +23,17 @@
 - **结果反馈**：清晰的转换结果反馈
 
 ### 📁 支持的文件格式
-- **输入**：Google Aistudio 导出的聊天记录 JSON 文件
+- **输入**：Google AI Studio 导出的聊天记录 JSON 文件
 - **输出**：标准 Markdown (.md) 文件
 
 ## 🚀 快速开始
 
 ### 方法一：使用可执行文件（推荐）
 
-1. 直接下载或从项目 `dist` 目录获取 `Aistudio转Markdown工具.exe`
+1. 直接下载或从项目 `dist` 目录获取 `AI Studio转Markdown工具.exe`
 2. 双击运行该文件
 3. 在弹出的界面中：
-   - 点击「➕ 添加文件」选择要转换的 Aistudio 聊天记录文件
+   - 点击「➕ 添加文件」选择要转换的 AI Studio 聊天记录文件
    - 或点击「📁 从目录添加」批量导入文件
    - 或直接将文件拖放到窗口中
 4. 点击「🚀 开始转换」
@@ -51,36 +51,36 @@ pip install -r requirements.txt
 
 #### 使用命令行工具
 ```bash
-python aistudio_to_md.py <input_file1> <input_file2> ...
+python AI Studio_to_md.py <input_file1> <input_file2> ...
 ```
 
 例如：
 ```bash
-python aistudio_to_md.py "Husband's Wife's Emotional Distress" "Mind Quadrant_ Inner World Assessment"
+python AI Studio_to_md.py "Husband's Wife's Emotional Distress" "Mind Quadrant_ Inner World Assessment"
 ```
 
 #### 使用图形界面脚本
 ```bash
-python aistudio_to_md_gui.py
+python AI Studio_to_md_gui.py
 ```
 
 ## 📦 项目结构
 
 ```
 .
-├── aistudio_to_md.py          # 核心转换脚本（命令行版）
-├── aistudio_to_md_gui.py      # 图形界面版本
+├── AI Studio_to_md.py          # 核心转换脚本（命令行版）
+├── AI Studio_to_md_gui.py      # 图形界面版本
 ├── requirements.txt           # 依赖列表
 ├── README.md                  # 项目说明文档
 ├── dist/                      # 打包后的可执行文件目录
-│   └── Aistudio转Markdown工具.exe
+│   └── AI Studio转Markdown工具.exe
 ├── output/                    # 转换结果示例目录
 └── build/                     # 打包临时目录
 ```
 
 ## 📄 转换示例
 
-### 输入：Aistudio 聊天记录 JSON
+### 输入：AI Studio 聊天记录 JSON
 ```json
 {
   "chunkedPrompt": {
@@ -141,11 +141,11 @@ Tokens: 15
 
 ## 🛠️ 核心代码说明
 
-### AistudioChatParser 类
+### AI StudioChatParser 类
 
 ```python
-class AistudioChatParser:
-    """Aistudio 聊天记录解析器"""
+class AI StudioChatParser:
+    """AI Studio 聊天记录解析器"""
     
     def load_chat_file(self, file_path: str) -> dict:
         """加载并解析 JSON 文件"""
@@ -184,7 +184,7 @@ class AistudioChatParser:
 
 ### Q: 转换失败怎么办？
 A: 请检查：
-   - 输入文件是否为有效的 Aistudio 聊天记录 JSON 文件
+   - 输入文件是否为有效的 AI Studio 聊天记录 JSON 文件
    - 文件是否完整，没有损坏
    - 如果使用命令行，是否有足够的权限
 
@@ -195,13 +195,13 @@ A: 默认保存在源文件同一目录下，文件名与源文件相同，后�
 A: 当前提供的可执行文件仅支持 Windows 系统。Linux 和 macOS 用户可以使用 Python 脚本版本。
 
 ### Q: 可以转换其他平台的聊天记录吗？
-A: 目前仅支持 Google Aistudio 导出的聊天记录格式。
+A: 目前仅支持 Google AI Studio 导出的聊天记录格式。
 
 ## 📋 更新日志
 
 ### v1.0.0 (2026-01-13)
 - ✨ 初始版本
-- 🎯 支持 Aistudio 聊天记录转换为 Markdown
+- 🎯 支持 AI Studio 聊天记录转换为 Markdown
 - 🖥️ 提供图形界面和命令行两种使用方式
 - 📦 支持批量转换
 - 🎨 美观的 Markdown 输出格式
