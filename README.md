@@ -220,7 +220,7 @@ A: 目前仅支持 Google Aistudio 导出的聊天记录格式。
 如有问题或建议，欢迎通过以下方式联系：
 
 - 提交 GitHub Issue
-- 发送邮件至：[your-email@example.com]
+- 发送邮件至：[gezihan2008@gmail.com]
 
 ---
 
