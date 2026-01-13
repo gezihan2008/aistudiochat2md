@@ -208,7 +208,7 @@ class AistudioToMD_GUI:
         file_label = Label(
             file_frame, 
             text="📂 选择要转换的文件 (支持多选):",
-            style='Header.TLabel'
+            font=('微软雅黑', 12, 'bold')
         )
         file_label.pack(anchor='w')
 
